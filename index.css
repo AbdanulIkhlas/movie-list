@@ -186,7 +186,7 @@ header section {
 }
 
 header section img {
-    width: 230px;
+    width: 150px;
 }
 
 /*! start : style navbar  */
@@ -261,7 +261,7 @@ main article {
 
 
 main article section {
-    height: 41.5vh;
+    height: 80vh;
     border: 3px solid white;
     border-radius: 8px;
     box-sizing: border-box;
@@ -279,14 +279,14 @@ main article section h1 {
 
 .all-cards {
     display: flex;
-    overflow-x: auto;
-    /*? untuk mencegah pemisahan konten menjadi baris baru. */
-    white-space: nowrap;
-    height: 34.5vh;
+    /*? Mengatur wrap saat item lebih dari satu baris */
+    flex-wrap: wrap;
+    /*? Menghapus tinggi tetap untuk mengizinkan wrap */
+    height: auto;
     margin: 8px;
     box-sizing: border-box;
-    padding: 15px;
-    gap: 20px;
+    gap: 50px;
+    padding: 20px 20px 50px 20px;
 }
 
 .all-cards .container-card {
@@ -298,7 +298,8 @@ main article section h1 {
     /*? Mengatur lebar kartu */
     flex: 0 0 10vw;
     /*? Mengatur jarak antar kartu */
-    margin-right: 15px;
+    /* margin-right: 30px;
+    margin-bottom: 50px; */
     box-shadow: 2px 2px 10px 1px black;
     box-sizing: border-box;
 }
